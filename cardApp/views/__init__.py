@@ -1,1 +1,1 @@
-__all__ = ["cardView", "profileView", "registerView"]
+__all__ = ["cardView", "registerView", 'cardContactsView']

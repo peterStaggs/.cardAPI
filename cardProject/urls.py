@@ -16,12 +16,12 @@ Including another URLconf
 from django.conf.urls import url, include
 from rest_framework import routers
 from rest_framework.authtoken.views import obtain_auth_token
-from cardApp.views import cardView, profileView, userView, registerView 
+from cardApp.views import cardView, userView, registerView, cardContactsView 
 from django.contrib import admin
 
 router = routers.DefaultRouter()
 router.register(r'card', cardView.CardViewSet)
-router.register(r'profile', profileView.ProfileViewSet)
+router.register(r'card_contacts', cardContactsView.ContactsViewSet, base_name="Contacts")
 router.register(r'user', userView.UserViewSet)
 
 

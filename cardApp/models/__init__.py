@@ -1,1 +1,1 @@
-__all__ = ["cardModel", "profileModel"] 
+__all__ = ["cardModel"] 

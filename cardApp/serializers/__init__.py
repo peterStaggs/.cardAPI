@@ -1,2 +1,2 @@
 
-__all__ = ["cardSerializer", "profileSerializer", 'userSerializer']
+__all__ = ["cardSerializer", 'userSerializer', 'cardContactsSerializer']

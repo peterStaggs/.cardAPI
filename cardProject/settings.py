@@ -44,16 +44,16 @@ INSTALLED_APPS = [
     # 'cardApp.apps.CardappConfig',
 ]
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
-#         'rest_framework.authentication.TokenAuthentication',
-#         ),
-#         'DEFAULT_PERMISSION_CLASSES': [
-#             'rest_framework.permissions.IsAuthenticated', 
-#         ], 
-#         'PAGE_SIZE': 10
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+        ),
+        'DEFAULT_PERMISSION_CLASSES': [
+            'rest_framework.permissions.IsAuthenticated', 
+        ], 
+        'PAGE_SIZE': 10
 
-# }
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -69,7 +69,7 @@ MIDDLEWARE = [
 CORS_ORIGIN_WHITELIST = (
     'localhost:8080', 
     '127.0.0.1:8080',
-    '10.0.0.127:8100',
+    '10.0.0.158:8100',
     )
 
 ROOT_URLCONF = 'cardProject.urls'
